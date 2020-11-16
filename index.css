@@ -1,0 +1,386 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  background-color: lightgrey;
+
+}
+
+main {
+  
+  margin: auto;
+  margin-top: 57px;
+  background-color: white;
+  width: 100vw;
+}
+
+@media(min-width:1600px){
+  main {
+  width: 90vw;
+  }
+}
+
+#upper {
+  
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+#upperLine {
+  height: 58px;
+  display: flex;
+  grid-row: 1/2;
+  grid-column: 1/3;
+  justify-content: space-between;
+ 
+}
+
+
+
+#logo {
+  height: 100%;
+  width: 182px;
+  background-color: #551582;
+  margin-left: 7vw;
+  
+}
+
+#upperButtons {
+  display: flex;
+  align-items: center;
+  margin-right: 7vw;
+}
+
+#myAxiory {
+  background-color: white;
+  color:  black;
+  border: 1px solid  rgb(43, 139, 131);
+  text-transform: none;
+  height: 27px;
+  padding: 8px 12px;
+  font-size: 9px;
+  margin-bottom: 0;
+}
+
+#openAccount {
+  height: 27px;
+  padding: 8px 12px;
+  font-size: 9px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+#upperMenu {
+  font-size: 10px;
+  color: #551582;
+  margin-bottom: 10vh;
+}
+
+#upperText {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding: 0 7vw;
+}
+
+#upperImage {
+ 
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+#upperImage img {
+ 
+  width: 100%;
+  height: 100%;
+}
+
+#grad1 {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  height: 15px;
+  background-image: linear-gradient(rgba(0,0,0,0.07), rgba(0,0,0,0));
+  z-index: 4;
+}
+
+h1 {
+  color: #551582;
+  font-weight: 800;
+  font-size: 43px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 12px;
+  color:  #551582;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 21px;
+  font-weight: 800;
+  color: rgb(43, 139, 131);
+  margin-bottom: 35px;
+}
+
+.buttonContainer {
+  margin-top: 0;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.buttonContainer p {
+  margin-top: 0;
+  text-align: center;
+  color: grey;
+}
+
+button {
+  color: white;
+  background-color: rgb(43, 139, 131);
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 65px;
+  padding: 25px;
+  font-size: 15px;
+  border: none;
+  margin-bottom: 25px;
+}
+
+#middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+form {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: rgb(241, 240, 240);
+  padding: 20px 26px 20px 20px;
+  margin-right: 7vw;
+  margin-top: 55px;
+  height: 510px;
+  
+}
+
+#middleText {
+  grid-column: 1/3;
+  line-height: 2;
+  margin: 0 6vw 0 11vw;
+  padding-top: 55px;
+  padding-left: 0;
+}
+
+#middleText h2 {
+  font-weight: 800;
+  line-height: normal;
+  color: black;
+}
+
+form p {
+  color: grey;
+  margin: 20px 5% 0 5%;
+  font-size: 12px;
+  
+}
+
+#middleText p {
+  color: grey;
+}
+
+form input {
+  margin: 10px 5% 0 5%;
+  font-size: 15px;
+  border: 1px solid lightgrey;
+  padding: 18px;
+  width: 80%;
+}
+
+select {
+  margin: 20px;
+  margin-top: 5px;
+ 
+  /* color: rgb(129, 129, 129);
+    width: calc(90% + 2px); */
+}
+
+.hidden {
+  display: none;
+}
+
+#phoneContainer {
+  margin: 20px 5% 0 5%;
+  display: grid;
+
+  /* display: flex; */
+  grid-template-columns: 1fr 1fr 3fr;
+  grid-template-rows: 1fr;
+}
+
+#containerTriangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle-down {
+  grid-column: 1/2;
+   width: 0;
+  height: 0;
+  margin: auto;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #555;
+}
+
+#plus {
+  grid-column: 2/3;
+  /* flex-basis: 13%; */
+  
+  color: rgb(129, 129, 129);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+#phoneCode {
+  grid-column: 2/3;
+  color: rgb(129, 129, 129);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding-right: 5px;
+}
+
+#phoneContainer {
+  background-color: lightgrey;
+}
+
+#phoneContainer input {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  margin: 0;
+  padding: 20px;
+  padding-right: 0;
+  width: 90%;
+  
+}
+
+form button {
+  margin: 5%;
+  margin-bottom:0;
+  width: 90%;
+  background-color: #551582;
+ 
+  font-weight: bold;
+}
+
+#date {
+  background-color: rgb(241, 240, 240);
+  display: flex;
+  width: 35%;
+  line-height: normal;
+  padding: 10px;
+}
+
+
+#calendar {
+  margin: 10px;
+  }
+
+#info {
+  margin:0;
+  padding: 0;
+  position: absolute;
+}
+
+#info img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom: 0;
+ 
+}
+
+
+h4 {
+   color: rgb(43, 139, 131);
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul i {
+  font-size:20px;
+  color: rgb(43, 139, 131); 
+  margin-right: 10px;
+}
+
+#lower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#instructor {
+  width: 60%;
+  background: lightgrey;
+  margin:  30px;
+  padding: 40px 30px;
+  display: flex;
+}
+
+#instructorPhoto {
+  min-width: 40%;
+  margin-right: 30px;
+}
+
+#instructorPhoto img {
+  width: 100%;
+}
+
+#instructor h2 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#instructor h4 {
+  text-transform: none;
+}
+
+#lower h3 {
+  margin: 5px;
+  padding: 0;
+} 
+
+#lower .buttonContainer {
+  width: 15%;
+  min-width: 200px;
+  margin: 20px;
+}
+
+#icons {
+  min-width: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+#icons img {
+  margin: 10px;
+}
